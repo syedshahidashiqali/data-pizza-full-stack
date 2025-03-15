@@ -1,10 +1,20 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from models import GenerateAPIBodyI, GenerateAPIResponseI, ReferenceDocumentsAPIResponseI
 from mock_data import documents
 from cache import Cache
 
 # FastAPI app
 app = FastAPI()
+
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Cache
 cache = Cache()
