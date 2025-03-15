@@ -1,0 +1,19 @@
+# Ignore virtual environments
+venv/
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore dependencies
+*.sqlite3
+*.db
+node_modules/
+
+# Ignore system files
+.DS_Store
+.idea/
+.vscode/
