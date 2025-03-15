@@ -1,40 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Frontend - AI Chatbot with Fact-Checking
 
-## Getting Started
+## 🚀 Overview
+This is the frontend of the AI chatbot application, built using React and TypeScript. It provides a user-friendly interface to interact with the chatbot, which simulates AI-generated responses and offers fact-checking capabilities.
 
-First, run the development server:
+## 🏗 Tech Stack
+- **React (Next.js)**
+- **TypeScript**
+- **Tailwind CSS**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📂 Project Structure
+```
+frontend/
+│── components/       # Reusable UI components
+│── pages/            # Page components
+│── public/
+│── package.json      # Frontend dependencies
+│── Dockerfile        # Frontend Dockerfile
+│── README.md         # Documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🔧 Setup & Installation
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 1️⃣ **Run with Docker (Recommended)**
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/syedshahidashiqali/data-pizza-full-stack.git
+   cd data-pizza-full-stack/frontend
+   ```
+2. **Build and Run the Container:**
+   ```sh
+   docker build -t datapizza-frontend .
+   docker run -d -p 3000:3000 datapizza-frontend
+   ```
+3. Open the app at: `http://localhost:3000`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### 2️⃣ **Alternative: Pull from Docker Hub**
+Instead of building locally, you can pull the pre-built image:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* [Frontend Image](https://hub.docker.com/r/syedshahidashiqali/datapizza-frontend)
 
-## Learn More
+```sh
+docker pull syedshahidashiqali/datapizza-frontend:latest
+docker run -d -p 3000:3000 syedshahidashiqali/datapizza-frontend:latest
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3️⃣ **Run Locally without Docker**
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/syedshahidashiqali/data-pizza-full-stack.git
+   cd data-pizza-full-stack/frontend
+   ```
+2. **Install Dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Start the Development Server:**
+   ```sh
+   npm run dev
+   ```
+4. Open the app at: `http://localhost:3000`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Features Implemented
+✔️ Interactive chatbot UI  
+✔️ AI response simulation  
+✔️ Fact-checking with reference documents  
+✔️ Responsive design using Tailwind CSS  
+✔️ Dockerized frontend for easy deployment  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 License
+This project is for **Datapizza's technical test** and is not intended for production use.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+

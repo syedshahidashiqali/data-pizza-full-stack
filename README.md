@@ -25,6 +25,7 @@ This is a full-stack application that allows users to interact with a chatbot th
 project-root/
 │── backend/
 │   │── main.py         # FastAPI app with endpoints
+│   │── models.py       # Reusable models for API endpoints
 │   │── cache.py        # Async cache implementation
 │   │── Dockerfile      # Backend Dockerfile
 │── frontend/
