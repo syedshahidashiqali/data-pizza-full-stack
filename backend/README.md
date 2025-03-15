@@ -50,7 +50,7 @@ backend/
 ---
 
 ## 📜 License
-This project is for **Datapizza's technical test** and is not intended for production use.
+This project is for **DataPizza's technical test** and is not intended for production use.
 
 ---
 

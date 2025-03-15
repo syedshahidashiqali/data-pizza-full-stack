@@ -114,6 +114,6 @@ docker run -d -p 3000:3000 syedshahidashiqali/datapizza-frontend:latest
 ---
 
 ## 📜 License
-This project is for **Datapizza's technical test** and is not intended for production use.
+This project is for **DataPizza's technical test** and is not intended for production use.
 
 ---
