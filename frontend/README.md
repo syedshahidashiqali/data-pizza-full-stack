@@ -23,49 +23,6 @@ frontend/
 
 ---
 
-## 🔧 Setup & Installation
-
-### 1️⃣ **Run with Docker (Recommended)**
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/syedshahidashiqali/data-pizza-full-stack.git
-   cd data-pizza-full-stack/frontend
-   ```
-2. **Build and Run the Container:**
-   ```sh
-   docker build -t datapizza-frontend .
-   docker run -d -p 3000:3000 datapizza-frontend
-   ```
-3. Open the app at: `http://localhost:3000`
-
-### 2️⃣ **Alternative: Pull from Docker Hub**
-Instead of building locally, you can pull the pre-built image:
-
-* [Frontend Image](https://hub.docker.com/r/syedshahidashiqali/datapizza-frontend)
-
-```sh
-docker pull syedshahidashiqali/datapizza-frontend:latest
-docker run -d -p 3000:3000 syedshahidashiqali/datapizza-frontend:latest
-```
-
-### 3️⃣ **Run Locally without Docker**
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/syedshahidashiqali/data-pizza-full-stack.git
-   cd data-pizza-full-stack/frontend
-   ```
-2. **Install Dependencies:**
-   ```sh
-   npm install
-   ```
-3. **Start the Development Server:**
-   ```sh
-   npm run dev
-   ```
-4. Open the app at: `http://localhost:3000`
-
----
-
 ## 🎯 Features Implemented
 ✔️ Interactive chatbot UI  
 ✔️ AI response simulation  

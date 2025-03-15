@@ -22,38 +22,6 @@ backend/
 
 ---
 
-## 🔧 Setup & Installation
-
-### 1️⃣ **Run with Docker (Recommended)**
-You can pull and run the pre-built image from **Docker Hub**:
-* [Backend Image](https://hub.docker.com/r/syedshahidashiqali/datapizza-backend)
-
-
-```sh
-docker pull syedshahidashiqali/datapizza-backend:latest
-docker run -d -p 8000:8000 syedshahidashiqali/datapizza-backend:latest
-```
-
-### 2️⃣ **Run Locally (Without Docker)**
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/syedshahidashiqali/data-pizza-full-stack.git
-   cd data-pizza-full-stack/backend
-   ```
-2. **Create a Virtual Environment & Install Dependencies:**
-   ```sh
-   python -m venv .venv
-   source .venv/Scripts/activate  # For Windows Git Bash
-   pip install -r requirements.txt
-   ```
-3. **Run the FastAPI Application:**
-   ```sh
-   uvicorn main:app --reload
-   ```
-4. **API Documentation:** Available at `http://localhost:8000/docs`
-
----
-
 ## 🎯 API Endpoints
 
 ### **1. Generate Chatbot Response**
